@@ -1,0 +1,75 @@
+.select, .select1, .select2{
+	position: relative;
+	display: inline-block;
+}
+
+.select__list{
+	position: absolute;
+	display: none;
+	top: 40px;
+	left: 0;
+	width: 220px;
+	overflow: hidden;
+	text-align: left;
+	border: 1px solid #8FD4FF;
+	z-index: 9999;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.select__item{
+	line-height: 30px;
+	padding-left: 20px;
+}
+
+.select__item:hover{
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.select__item.active{
+	background-color: #eee;
+}
+
+.select__title{
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 35px;
+	border: 1px solid #e2e2e2;
+	line-height: 35px;
+	padding-left: 20px;
+	text-align: left;
+	cursor: pointer;
+}
+
+.select__placeholder{
+	color: #A5A5A5;
+}
+
+.select__title::after{
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -4px;
+	content: '';
+	width: 12px;
+	height: 8px;
+	background: url(select_strelka_bottom.png) no-repeat center;
+}
+
+.select__title.active::after{
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -4px;
+	content: '';
+	width: 12px;
+	height: 8px;
+	background: url(select_strelka_top.png) no-repeat center;
+}
+
+.select__title.active{
+	border-color: #8FD4FF;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Стили для Select окна начало -->
+		<link rel="stylesheet" href="css/select.css">
+	<!-- Стили для Select окна конец -->
+
+	<title>Test</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<body>
+	<div id="Wrapper">
+
+		<h1 class="h1">Элемент Select</h1>
+		<form method="post" action="">
+
+	        <div class="select">
+	       		<input type="hidden" name="selected" class='select__input' value="">
+	        	<div class="select__title"><span class="select__placeholder">Выберите пункт</span></div>
+				<ul class="select__list">
+	        		<li class="select__item">Пункт 1</li>
+	        		<li class="select__item">Пункт 2</li>
+	        		<li class="select__item">Пункт 3</li>
+	        		<li class="select__item">Пункт 4</li>
+	        		<li class="select__item">Пункт 5</li>
+	        	</ul>
+	        </div>
+	        <div class="select1">
+	       		<input type="hidden" name="selected" class='select__input' value="">
+	        	<div class="select__title"><span class="select__placeholder">Выберите пункт</span></div>
+				<ul class="select__list">
+	        		<li class="select__item">Пункт 1</li>
+	        		<li class="select__item">Пункт 2</li>
+	        		<li class="select__item">Пункт 3</li>
+	        		<li class="select__item">Пункт 4</li>
+	        		<li class="select__item">Пункт 5</li>
+	        	</ul>
+	        </div>
+			<div class="select2">
+	       		<input type="hidden" name="selected" class='select__input' value="">
+	        	<div class="select__title"><span class="select__placeholder">Выберите пункт</span></div>
+				<ul class="select__list">
+	        		<li class="select__item">Пункт 1</li>
+	        		<li class="select__item">Пункт 2</li>
+	        		<li class="select__item">Пункт 3</li>
+	        		<li class="select__item">Пункт 4</li>
+	        		<li class="select__item">Пункт 5</li>
+	        	</ul>
+	        </div>
+
+ 	   </form>
+			
+	</div>
+
+	<!-- Скрипты для Модального окна начало -->
+		<script src="js/jquery.select.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.select').select();
+				$('.select1').select();
+				$('.select2').select();
+			});
+		</script>
+	<!-- Скрипты для Модального окна конец -->
+</body>
+</html>
